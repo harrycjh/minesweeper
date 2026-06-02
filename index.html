@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>扫雷 — Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="header">
+      <div id="mine-count">💣 <span>10</span></div>
+      <button id="reset-btn">🙂</button>
+      <div id="timer">⏱ <span>0</span></div>
+    </div>
+    <div id="difficulty-bar">
+      <button class="diff-btn active" data-level="easy">简单 9×9</button>
+      <button class="diff-btn" data-level="medium">中等 16×16</button>
+      <button class="diff-btn" data-level="hard">困难 30×16</button>
+    </div>
+    <div id="board"></div>
+    <div id="flag-toggle">
+      <button id="flag-mode-btn">🚩 插旗模式</button>
+    </div>
+  </div>
+  <div id="game-overlay" class="hidden">
+    <div id="overlay-content">
+      <div id="overlay-emoji"></div>
+      <div id="overlay-message"></div>
+      <div id="overlay-stats"></div>
+      <button id="play-again-btn">再来一局 🔄</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
